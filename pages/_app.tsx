@@ -13,9 +13,8 @@ const components = {
   codeEditor: CodeEditor,
   tip: Tip,
 };
-
 storyblokInit({
-  accessToken: "rwpaqa8YJbffyvg6pGM6vQtt",
+  accessToken: process.env.ACCES_TOKEN,
   use: [apiPlugin],
   components,
 });
