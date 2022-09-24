@@ -1,16 +1,19 @@
 export namespace Block {
-  export interface CodeEditor {
-    blok: {
-      src?: string;
-    };
-  }
-
   export interface Tip {
     blok: {
       title: string;
       description: string;
       level: Level;
       categories: Category[];
+      codeSrc: string;
+    };
+  }
+
+  export interface Page {
+    blok: {
+      tip: {
+        content: Tip;
+      };
     };
   }
 

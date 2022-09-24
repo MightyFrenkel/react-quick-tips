@@ -1,9 +1,7 @@
-import { Block } from "../../models/ContentBlocks";
-
-export const CodeEditor = ({ blok }: Block.CodeEditor) => {
+export const CodeEditor = ({ src }: { src: string }) => {
   return (
     <iframe
-      src={blok.src}
+      src={src}
       className="w-full border-0 overflow-hidden"
       style={{
         height: "800px",
