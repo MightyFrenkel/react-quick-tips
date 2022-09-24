@@ -6,7 +6,17 @@ export namespace Block {
       level: Level;
       categories: Category[];
       codeSrc: string;
+      image?: Image;
     };
+  }
+
+  export interface Image {
+    alt: string;
+    copyright: string;
+    filename: string;
+    id: number;
+    name: string;
+    title: string;
   }
 
   export interface Page {
