@@ -12,8 +12,9 @@ export namespace Block {
   export interface Page {
     blok: {
       tip: {
-        content: Tip;
+        content: any;
       };
+      body: any;
     };
   }
 
